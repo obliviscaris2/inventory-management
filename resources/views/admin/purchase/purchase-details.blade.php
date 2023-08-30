@@ -87,7 +87,7 @@
                             </div>
 
                             @if ($purchase->purchase_status == 0)
-                                
+
                                     <!-- Submit button -->
                                     {{-- <button type="submit" class="btn btn-success" onclick="return confirm('Are you sure you want to approve this purchase?')">
                                         Approve Purchase
@@ -96,7 +96,7 @@
                                         Approve Purchase
                                     </button>
                                     <a class="btn btn-primary" href="{{ URL::previous() }}">Back</a>
-                                
+
                             @else
                                 <a class="btn btn-primary" href="{{ URL::previous() }}">Back</a>
                             @endif
@@ -127,7 +127,7 @@
                                     <button type="submit" class="btn btn-danger">
                                         Yes
                                     </button>
-                                </form>   
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -162,8 +162,8 @@
                                                     <td scope="row">{{ $loop->iteration }}</td>
                                                     <td scope="row">
                                                         <div style="max-height: 80px; max-width: 80px;">
-                                                            <img class="img-fluid"
-                                                                src="{{ $item->product->product_image ? asset('uploads/products/image/' . $item->product->product_image) : asset('assets/img/products/default.webp') }}">
+                                                            {{-- <img class="img-fluid"
+                                                                src="{{ $item->product->product_image ? asset('uploads/products/image/' . $item->product->product_image) : asset('assets/img/products/default.webp') }}"> --}}
                                                         </div>
                                                     </td>
                                                     <td scope="row">{{ $item->product->product_name }}</td>

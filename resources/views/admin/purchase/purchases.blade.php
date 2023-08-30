@@ -133,11 +133,11 @@
                                                     </td>
                                                     <td>
                                                         <div class="d-flex">
-                                                            <a href="{{ route('purchases.purchaseDetails', $purchase->id) }}"
+                                                            <a href="{{ route('admin.purchase.deletePurchase', $purchase->id) }}"
                                                                 class="btn btn-outline-success btn-sm mx-1"><i
                                                                     class="fa-solid fa-eye"></i></a>
                                                             <form
-                                                                action="{{ route('purchases.deletePurchase', $purchase->id) }}"
+                                                                action="{{ route('admin.purchase.deletePurchase', $purchase->id) }}"
                                                                 method="POST">
                                                                 @csrf
                                                                 @method('delete')
