@@ -29,15 +29,15 @@
                   @auth
                   <a class="nav-link" data-widget="pushmenu" href="#" role="button">
                   Hi, {{ Auth::user()->name }}
-                
+
                    </a>
                   @endauth
               </li>
-              
+
               <li class="nav-item d-none d-sm-inline-block">
                 @auth
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button">
-               
+
                 {{ Auth::user()->email }}
                  </a>
                 @endauth
@@ -216,16 +216,16 @@
 
       <!-- HEADER NAV-BAR -->
       @include('admin.includes.navbar')
-      
+
       <!--BODY CONTENTS BELOW HERE-->
         <div class="main-panel">
             <div class="content-wrapper">
-            <!-- 
+            <!--
                 BODY STUFF GOES HERE
             -->
 
             @yield('content')
-            
+
             </div>
 
 

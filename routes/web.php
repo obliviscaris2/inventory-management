@@ -23,10 +23,13 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
+    // Route::get('/dashboard', function () {
+    //     return view('dashboard');
+    // })->name('dashboard');
 });
+
+
 
 Route::middleware([
     'auth:sanctum',
@@ -97,7 +100,7 @@ Route::middleware([
             Route::post('store',       [ ProductController::class,'store']   )->name('store');
         });
 
-        // ROUTES FOR PURCHASES 
+        // ROUTES FOR PURCHASES
 
         Route::as('purchase.')->prefix('purchase')->group(function (){
 
@@ -119,10 +122,10 @@ Route::middleware([
             Route::get('report/export',            [PurchaseController::class, 'getPurchaseReport']   )->name('getPurchaseReport');
 
             Route::post('report/export',           [PurchaseController::class, 'exportPurchaseReport'])->name('exportPurchaseReport');
-            
+
         });
 
-        // ROUTES FOR SUPPLIERS 
+        // ROUTES FOR SUPPLIERS
 
         Route::as('supplier.')->prefix('supplier')->group(function (){
 
@@ -184,6 +187,6 @@ Route::middleware([
 
         });
 
-        
+
     });
 });
