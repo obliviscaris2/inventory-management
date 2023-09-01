@@ -102,7 +102,7 @@
                                         <tr>
                                             <th scope="col">No.</th>
                                             <th scope="col">Purchase</th>
-                                            <th scope="col">@sortablelink('warehouse.name', 'Warehouse')</th>
+                                            {{-- <th scope="col">@sortablelink('warehouse.name', 'Warehouse')</th> --}}
                                             <th scope="col">@sortablelink('supplier.name', 'Supplier')</th>
                                             <th scope="col">@sortablelink('purchase_date', 'Date')</th>
                                             <th scope="col">@sortablelink('total')</th>
@@ -116,7 +116,7 @@
                                                 <tr>
                                                     <td>{{ $loop->iteration }}</td>
                                                     <td>{{ $purchase->purchase_no }}</td>
-                                                    <td>{{ $purchase->warehouse->name }}</td>
+                                                    {{-- <td>{{ $purchase->warehouse->name }}</td> --}}
                                                     <td>{{ $purchase->supplier->name }}</td>
                                                     <td>{{ $purchase->purchase_date }}</td>
                                                     <td>{{ $purchase->total_amount }}</td>

@@ -1,0 +1,22 @@
+/* Footer Section admin.blade and app.blade  */
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Footer Section End admin.blade */
+
+/* navbar panel admin.blade and app.blade  */
+.shift-right-navbar{
+    margin-left: 15%;
+}
+/* navbar panel admin.blade*/
+
+
+/* dashboard css styling */
+
+/* dashboard css styling */

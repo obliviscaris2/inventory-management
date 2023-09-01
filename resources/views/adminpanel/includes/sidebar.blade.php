@@ -1,8 +1,4 @@
 
-<?php
-use App\Models\SiteSetting;
-    $sitesetting = SiteSetting::first();
-?>
 
 <nav class="navbar navbar-light navbar-vertical navbar-expand-xl">
     <script>
@@ -17,7 +13,7 @@ use App\Models\SiteSetting;
                 data-bs-placement="left" aria-label="Toggle Navigation" data-bs-original-title="Toggle Navigation"><span
                     class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
         </div>
-        <a class="navbar-brand" href="{{ route('admin.index') }}">
+        <a class="navbar-brand" href="">
             <div class="d-flex align-items-center py-3">
                 {{-- <img class="me-2" src="{{ asset('uploads/sitesetting/' . $sitesetting->side_logo) }}" alt="Admin Logo"
                     width="40"> --}}
@@ -43,28 +39,28 @@ use App\Models\SiteSetting;
                                 class="nav-link-text ps-1">Dashboard</span></div>
                     </a>
                     <ul class="nav collapse show" id="dashboard">
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.sitesetting.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span
                                         class="nav-link-text ps-1">SiteSetting</span></div>
                             </a><!-- more inner pages-->
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.coverimage.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Cover
                                         Image</span></div>
                             </a><!-- more inner pages-->
                         </li>
-                       
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.about.index') }}">
+
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">About Us</span>
                                 </div>
                             </a><!-- more inner pages-->
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.mvc.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Mission, Vision, Values</span>
                                 </div>
                             </a><!-- more inner pages-->
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.orgchart.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Organizational Chart</span>
                                 </div>
                             </a><!-- more inner pages-->
@@ -81,66 +77,8 @@ use App\Models\SiteSetting;
                     </div><!-- parent pages-->
 
 
-                    {{-- <a class="nav-link dropdown-indicator" href="#email" role="button" data-bs-toggle="collapse"
-                      aria-expanded="false" aria-controls="email">
-                      <div class="d-flex align-items-center"><span class="nav-link-icon"><svg
-                                  class="svg-inline--fa fa-wrench fa-w-16" aria-hidden="true" focusable="false"
-                                  data-prefix="fas" data-icon="wrench" role="img"
-                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-                                  <path fill="currentColor"
-                                      d="M507.73 109.1c-2.24-9.03-13.54-12.09-20.12-5.51l-74.36 74.36-67.88-11.31-11.31-67.88 74.36-74.36c6.62-6.62 3.43-17.9-5.66-20.16-47.38-11.74-99.55.91-136.58 37.93-39.64 39.64-50.55 97.1-34.05 147.2L18.74 402.76c-24.99 24.99-24.99 65.51 0 90.5 24.99 24.99 65.51 24.99 90.5 0l213.21-213.21c50.12 16.71 107.47 5.68 147.37-34.22 37.07-37.07 49.7-89.32 37.91-136.73zM64 472c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z">
-                                  </path>
-                              </svg>
-                       
-                          </span><span
-                              class="nav-link-text ps-1">SiteSetting</span></div>
-                  </a>
-                  <ul class="nav collapse" id="email">
-                      <li class="nav-item"><a class="nav-link" href="{{ route('admin.sitesetting.index') }}">
-                              <div class="d-flex align-items-center"><span
-                                      class="nav-link-text ps-1">SiteSetting</span></div>
-                          </a><!-- more inner pages-->
-                      </li>
-                      <li class="nav-item"><a class="nav-link" href="{{ route('admin.coverimage.index') }}">
-                              <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Cover
-                                      Image</span></div>
-                          </a><!-- more inner pages-->
-                      </li>
-                      <li class="nav-item"><a class="nav-link" href="">
-                              <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Background
-                                      Image</span></div>
-                          </a><!-- more inner pages-->
-                      <li class="nav-item"><a class="nav-link" href="{{ route('admin.about.index') }}">
-                              <div class="d-flex align-items-center"><span class="nav-link-text ps-1">About Us</span>
-                              </div>
-                          </a><!-- more inner pages-->
-                      <li class="nav-item"><a class="nav-link" href="{{ route('admin.mvc.index') }}">
-                              <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Mission Vision
-                                      & Values</span></div>
-                          </a><!-- more inner pages-->
-                      </li>
-                  </ul> --}}
-                    <!-- parent pages-->
 
-                    <!-- parent pages-->
-                    {{--  <a class="nav-link" href="{{ route('admin.pricing.index') }}" role="button">
-                      <div class="d-flex align-items-center"><span class="nav-link-icon"><svg
-                                  class="svg-inline--fa fa-calendar-alt fa-w-14" aria-hidden="true"
-                                  focusable="false" data-prefix="fas" data-icon="calendar-alt" role="img"
-                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
-                                  <path fill="currentColor"
-                                      d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z">
-                                  </path>
-                              </svg>
 
-                            </span><span
-                              class="nav-link-text ps-1">Pricing</span></div>
-                  </a>
-                   --}}
-
-                    <!-- parent pages-->
-
-              
                     <a class="nav-link dropdown-indicator" href="#events" role="button" data-bs-toggle="collapse"
                         aria-expanded="false" aria-controls="events">
                         <div class="d-flex align-items-center"><span class="nav-link-icon">
@@ -148,32 +86,32 @@ use App\Models\SiteSetting;
                             </span><span class="nav-link-text ps-1">Team</span></div>
                     </a>
                     <ul class="nav collapse" id="events">
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.centralcommitteedetails.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Central Committee Members</span>
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.provincecommitteedetails.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Province Committee Members</span>
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.districtcommitteedetails.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">District Committee Members</span>
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.localcommitteedetails.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Local Committee Members</span>
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.campuscommitteedetails.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Campus Committee Members</span>
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.unitcommitteedetails.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Unit Committee Members</span>
                                 </div>
                             </a>
@@ -183,13 +121,13 @@ use App\Models\SiteSetting;
                                 </div>
                             </a>
                         </li> --}}
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.team.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Team</span>
                                 </div>
                             </a>
                         </li>
                     </ul>
-              
+
                     <a class="nav-link dropdown-indicator" href="#eventstwo" role="button" data-bs-toggle="collapse"
                         aria-expanded="false" aria-controls="events">
                         <div class="d-flex align-items-center"><span class="nav-link-icon">
@@ -197,27 +135,27 @@ use App\Models\SiteSetting;
                             </span><span class="nav-link-text ps-1">Add Items</span></div>
                     </a>
                     <ul class="nav collapse" id="eventstwo">
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.province.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Province</span>
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.district.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">District</span>
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.local.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Local</span>
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.campus.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Campus</span>
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.unit.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Unit</span>
                                 </div>
                             </a>
@@ -233,12 +171,12 @@ use App\Models\SiteSetting;
                             </span><span class="nav-link-text ps-1">Gallery</span></div>
                     </a>
                     <ul class="nav collapse" id="eventsone">
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.image.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Image</span>
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('admin.video.index') }}">
+                        <li class="nav-item"><a class="nav-link" href="">
                                 <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Video</span>
                                 </div>
                             </a>
@@ -249,21 +187,21 @@ use App\Models\SiteSetting;
 
 
 
-                    <a class="nav-link" href="{{ route('admin.categories.index') }}" role="button">
+                    <a class="nav-link" href="" role="button">
                         <div class="d-flex align-items-center"><span class="nav-link-icon">
                             <i class="fas fa-sort-alpha-up"></i>
                                 <!-- <span class="fas fa-comments"></span> Font Awesome fontawesome.com --></span><span
                                 class="nav-link-text ps-1">Category</span></div>
                     </a>
 
-                    <a class="nav-link" href="{{ route('admin.message.index') }}" role="button">
+                    <a class="nav-link" href="" role="button">
                         <div class="d-flex align-items-center"><span class="nav-link-icon">
                             <i class="fas fa-comment-dots"></i>
                                 <!-- <span class="fas fa-comments"></span> Font Awesome fontawesome.com --></span><span
                                 class="nav-link-text ps-1">Message</span></div>
                     </a>
 
-                    <a class="nav-link" href="{{ route('admin.posts.index') }}" role="button">
+                    <a class="nav-link" href="" role="button">
                         <div class="d-flex align-items-center"><span class="nav-link-icon">
                             <i class="far fa-file"></i>
                                 <!-- <span class="fas fa-calendar-alt"></span> Font Awesome fontawesome.com --></span><span
@@ -271,7 +209,7 @@ use App\Models\SiteSetting;
                     </a>
 
 
-                    <a class="nav-link" href="{{ route('admin.link.index') }}" role="button">
+                    <a class="nav-link" href="" role="button">
                         <div class="d-flex align-items-center"><span class="nav-link-icon">
                             <i class="fas fa-link"></i>
                                 <!-- <span class="fas fa-comments"></span> Font Awesome fontawesome.com --></span><span
@@ -280,25 +218,25 @@ use App\Models\SiteSetting;
 
 
 
-                   
 
-                    <a class="nav-link" href="{{ route('admin.youth.index') }}" role="button">
+
+                    <a class="nav-link" href="" role="button">
                         <div class="d-flex align-items-center"><span class="nav-link-icon">
                             <i class="fas fa-sitemap"></i>
-                            
+
                                 <!-- <span class="fas fa-comments"></span> Font Awesome fontawesome.com --></span><span
                                 class="nav-link-text ps-1">Youth Activity/Stats</span></div>
                     </a>
 
-                    <a class="nav-link" href="{{ route('admin.information.index') }}" role="button">
+                    <a class="nav-link" href="" role="button">
                         <div class="d-flex align-items-center"><span class="nav-link-icon">
                             <i class="fas fa-sitemap"></i>
-                            
+
                                 <!-- <span class="fas fa-comments"></span> Font Awesome fontawesome.com --></span><span
                                 class="nav-link-text ps-1">Information</span></div>
                     </a>
 
-                    <a class="nav-link" href="{{ route('admin.documents.index') }}" role="button">
+                    <a class="nav-link" href="" role="button">
                         <div class="d-flex align-items-center"><span class="nav-link-icon">
                             <i class="fas fa-print"></i>
                                 <!-- <span class="fas fa-comments"></span> Font Awesome fontawesome.com --></span><span
@@ -313,7 +251,7 @@ use App\Models\SiteSetting;
                                 class="nav-link-text ps-1">News, Other</span></div>
                     </a> --}}
 
-                    <a class="nav-link" href="{{ route('admin.contactus.index') }}" role="button">
+                    <a class="nav-link" href="" role="button">
                         <div class="d-flex align-items-center"><span class="nav-link-icon">
                             <i class="fas fa-address-card"></i>
                                 <!-- <span class="fas fa-comments"></span> Font Awesome fontawesome.com --></span><span
@@ -373,14 +311,14 @@ use App\Models\SiteSetting;
                         </div>
                     </div><!-- parent pages-->
 
-                    <a class="nav-link" href="{{ route('admin.personalinfo.index') }}" role="button">
+                    <a class="nav-link" href="" role="button">
                         <div class="d-flex align-items-center"><span class="nav-link-icon">
                                 <i class="fas fa-sort-alpha-up"></i>
                                 <!-- <span class="fas fa-comments"></span> Font Awesome fontawesome.com --></span><span
                                 class="nav-link-text ps-1">Members</span></div>
                     </a>
 
-                    <a class="nav-link" href="{{ route('admin.userinfo.index') }}" role="button">
+                    <a class="nav-link" href="" role="button">
                         <div class="d-flex align-items-center"><span class="nav-link-icon">
                                 <i class="fas fa-sort-alpha-up"></i>
                                 <!-- <span class="fas fa-comments"></span> Font Awesome fontawesome.com --></span><span
